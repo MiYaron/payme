@@ -30,6 +30,16 @@ main {
     padding: 10px;
 }
 
+#logo {
+    width: 100vw;
+    height: 80px;
+    margin-top: 5vh;
+    background-image: url('../src/app/images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
 .error-p {
     color: var(--solid-red);
     font-size: 0.7rem;
