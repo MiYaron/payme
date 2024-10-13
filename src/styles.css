@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --gradient-peach: linear-gradient(150deg, rgba(237,66,100,1) 0%, rgba(255,237,188,1) 100%);
+    --gradient-accept: linear-gradient(310deg, rgba(99,181,156,1) 0%, rgba(66,237,152,1) 100%);
+    --gradient-decline: linear-gradient(310deg, rgba(170,37,86,1) 0%, rgba(237,66,100,1) 100%);
+
+    --solid-pink: #e29fa6;
+    --solid-brown: #743A3F;
+    --solid-gray: #787878;
+    --solid-black: #353535;
+    --solid-green: #55CD9A;
+    --solid-red: #ED4264;
+
+    font-size: 20px;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    color:  var(--text-black);
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.error-p {
+    color: var(--solid-red);
+    font-size: 0.7rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+hr {
+    background: var(--solid-gray);
+    height: 1px;
+    opacity: 0.2;
+    margin-bottom: 10px;
+}
+
+.backdrop {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(237,66,100);
+    background: linear-gradient(150deg, rgba(237,66,100,1) 0%, rgba(255,237,188,1) 100%);   
+    border-radius: 45px;
+    width: 95vw;
+    min-height: 300px;
+    padding: 40px 50px;
+    z-index: 1;
+}

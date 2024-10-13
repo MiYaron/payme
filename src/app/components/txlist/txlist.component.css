@@ -1,0 +1,23 @@
+#transactions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vw;
+
+    h2 {
+        cursor: pointer;
+        font-size: 1rem;
+        color: var(--solid-black);
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    #show-more {
+        cursor: pointer;
+        font-size: 0.7rem;
+    }
+
+    app-transaction {
+        width: 100%;
+    }
+}

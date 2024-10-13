@@ -1,0 +1,77 @@
+.card {
+    transition: height 2s ease;
+    width: 100%;
+    background: white;
+    border-radius: 25px;
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+    
+    h3 {
+        color: var(--solid-pink);
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding-top: 20px;
+        padding-left: 25px;
+    }
+
+    p {
+        width: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+        color: var(--solid-brown);
+        margin: 25px 0px;
+    }
+    
+    #card-footer {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        height: 45px;
+        border-top: 1px solid rgba(110, 110, 110, 0.2);
+    }
+
+    #send-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background: var(--gradient-accept);
+        border-bottom-right-radius: 25px;
+        border-left: 1px solid rgba(110, 110, 110, 0.2);
+        font-size: 0.8rem;
+        color: white;
+        width: 50%;
+    }
+
+    #cancel-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background: var(--gradient-decline);
+        border-bottom-left-radius: 25px;
+        border-right: 1px solid rgba(0, 0, 0, 0.5);
+        font-size: 0.8rem;
+        color: white;
+        width: 50%;
+    }
+}
+
+.transaction-form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+
+    label {
+        font-size: 0.7rem;
+        font-weight: 300;
+        margin-bottom: 5px;
+    }
+    input {
+        margin-bottom: 20px;
+        padding-left: 10px;
+        border-radius: 10px;
+        border: 1px solid var(--solid-gray);
+        box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+        height: 35px;
+    }
+}

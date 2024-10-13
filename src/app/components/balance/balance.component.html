@@ -1,0 +1,20 @@
+<div class="card">
+  <h3>YOUR BALANCE</h3>
+  <p>${{ (balance$ | async) || 0 }}</p>
+  <div *ngIf="isFormVisible">
+    <hr />
+    <form class="transaction-form" id="tx-form" [formGroup]="txForm">
+      <label htmlFor="to">Reciever's Email:</label>
+      <input type="email" id="to" formControlName="to" required />
+      <label htmlFor="amount">Amount:</label>
+      <input type="number" id="amount" formControlName="amount" required />
+    </form>
+    <div class="error-p">{{ errorMessage }}</div>
+  </div>
+  <div id="card-footer">
+    <div *ngIf="isFormVisible" id="cancel-button" (click)="cancel()">
+      Cancel
+    </div>
+    <div id="send-button" (click)="sendMoney()">Send Money</div>
+  </div>
+</div>

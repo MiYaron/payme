@@ -1,0 +1,16 @@
+<main>
+  <div class="dashboard">
+    <div class="backdrop"></div>
+    <div class="content">
+      <div class="header">
+        <div id="exit-button" (click)="signout()"></div>
+        <p>
+          Welcome <span id="username">{{ user?.name }}</span
+          >,
+        </p>
+      </div>
+      <app-balance />
+    </div>
+  </div>
+  <app-txlist />
+</main>

@@ -1,0 +1,31 @@
+<main>
+  <div class="sign">
+    <div class="backdrop">
+      <div class="header">
+        <p>Welcome <span id="username">Guest</span>,</p>
+      </div>
+      <div class="content">
+        <form id="signin-form" [formGroup]="signinForm" (ngSubmit)="signin()">
+          <label for="email">Email:</label>
+          <input id="email" name="email" type="email" formControlName="email" />
+
+          <label for="password">Password:</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            formControlName="password"
+          />
+
+          <input id="submit" type="submit" value="Sign in" />
+        </form>
+
+        <p class="alternate">
+          Don't have an account yet?
+          <a (click)="signup()">Sign up</a>
+        </p>
+        <div class="error-p">{{ errorMessage }}</div>
+      </div>
+    </div>
+  </div>
+</main>

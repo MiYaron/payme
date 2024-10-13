@@ -1,0 +1,23 @@
+<div class="tx-item">
+  <div
+    class="tx-icon"
+    [ngClass]="{
+      positive: transaction.amount > 0,
+      negative: transaction.amount <= 0
+    }"
+  ></div>
+  <div class="tx-data">
+    <p>{{ transaction.amount > 0 ? "From" : "To" }}</p>
+    <p class="username"></p>
+    <p>
+      {{ transaction.amount > 0 ? transaction.from.name : transaction.to.name }}
+    </p>
+  </div>
+  <p class="amount positive">
+    {{
+      transaction.amount > 0
+        ? "+$" + transaction.amount
+        : "$" + transaction.amount
+    }}
+  </p>
+</div>

@@ -1,0 +1,31 @@
+#verification {
+        margin-top: 30%;
+        display: flex;
+        justify-content: column;
+        text-align: center;
+        color: white;
+        text-shadow: 0px 2px 5px rgba(0,0,0,0.15);            
+
+        h2 {
+            margin-bottom: 10%;
+        }
+
+        button {
+            position: absolute;
+            transform: translateX(-50%);
+            cursor: pointer;
+            align-self: center;
+            width: 50%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            border: 0px;
+            border-radius: 10px;
+            background: var(--gradient-accept);
+            box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+            color: white;
+            font-size: 1rem;
+            bottom: -12%;
+        }
+
+}

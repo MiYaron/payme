@@ -1,0 +1,11 @@
+<div id="transactions">
+  <h2 (click)="fold()">Transactions ↑</h2>
+  <ng-container *ngIf="transactions$ | async as transactions">
+    <app-transaction
+      *ngFor="let transaction of transactions"
+      [transaction]="transaction"
+    ></app-transaction>
+  </ng-container>
+
+  <p id="show-more" (click)="showMore()">Show More ↓</p>
+</div>

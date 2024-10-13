@@ -1,0 +1,60 @@
+<main>
+  <div class="sign">
+    <div class="backdrop">
+      <div class="header">
+        <p>Welcome <span id="username">Guest</span>,</p>
+      </div>
+      <div class="content">
+        <form id="signup-form" [formGroup]="signupForm" (ngSubmit)="signup()">
+          <label>Name:</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required="{true}"
+            formControlName="name"
+          />
+          <label>Email:</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required="{true}"
+            formControlName="email"
+          />
+          <label>Phone:</label>
+          <input
+            id="phone"
+            name="phone"
+            type="text"
+            required="{true}"
+            formControlName="phone"
+          />
+          <label>Password:</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            formControlName="password"
+          />
+          <label>Confirm Password:</label>
+          <input
+            id="confirm-password"
+            name="confirm-password"
+            type="password"
+            formControlName="confirmPassword"
+          />
+
+          <input id="submit" type="submit" value="Sign up" />
+        </form>
+
+        <p class="alternate">
+          Already have an account?
+          <a (click)="signin()">Sign in</a>
+        </p>
+
+        <div class="error-p">{{ errorMessage }}</div>
+      </div>
+    </div>
+  </div>
+</main>
